@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Issahaque Banjja Venakuro | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="nav">
+      <h2 class="logo">Venn</h2>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+<section class="hero">
+  <div id="particles-js"></div>
+
+  <img class="profile-pic" src="IMG_8639.jpg" alt="Profile picture of Issahaque">
+  <h1>Issahaque Banjja Venakuro</h1>
+  <p>&gt; Computer Science Student | Aspiring AI/ML Engineer | Robotics Enthusiast</p>
+  <a href="#projects" class="btn">View My Work</a>
+</section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I am a Computer Science student at Hamilton College with a minor in Physics. I have a strong interest in AI engineering and robotics, 
+      and I enjoy designing intelligent systems, building practical software, 
+      and exploring technical solutions through hands-on projects.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section alt">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Python Calculator</h3>
+        <p>
+          Desktop calculator built using Python and PyQt5 with responsive input
+          handling, error checking, and a clean graphical interface.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Stopwatch Application</h3>
+        <p>
+          GUI-based stopwatch built in Python featuring accurate timing,
+          start/stop/reset functionality, and simple user controls.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Clock Widget</h3>
+        <p>
+          Real-time digital clock developed with Python and PyQt5, focused on
+          reliability, simplicity, and timing accuracy.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+  <li>Python</li>
+  <li>C</li>
+  <li>C++</li> <!-- added -->
+  <li>HTML & CSS</li>
+  <li>JavaScript</li>
+  <li>Problem Solving</li>
+  <li>Technical Support</li>
+  <li>Leadership</li>
+</ul>
+
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section alt">
+    <h2>Experience & Education</h2>
+    <p>
+      <strong>Hamilton College</strong> — Clinton, NY<br>
+      B.A. in Computer Science, Minor in Physics (2025–2029)<br>
+      GPA: 4.0
+    </p>
+    <p>
+      <strong>IT Help Desk Technician</strong> — Hamilton College (Nov 2025 – Present)<br>
+      Troubleshoot hardware, software, and network issues while assisting users
+      with system access and configuration.
+    </p>
+    <p>
+      <strong>Calculus Teaching Assistant</strong> — Hamilton College (Nov 2025 – Present)<br>
+      Provide one-on-one and group tutoring, support coursework, and help students
+      strengthen conceptual understanding.
+    </p>
+    <p>
+      <strong>Engineering Intern</strong> — Northern Electricity Distribution Company (Aug 2024 – Oct 2024)<br>
+      Assisted engineers with installations, inspections, and troubleshooting of
+      electrical systems and prepaid meters.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p>Email: bissahaq@hamilton.edu</p>
+    <p>Phone: (315) 542-4192</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Issahaque Banjja Venakuro</p>
+  </footer>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
+    "color": { "value": "#00ff88" },
+    "shape": { "type": "circle" },
+    "opacity": { "value": 0.7, "random": true },
+    "size": { "value": 3, "random": true },
+    "line_linked": { "enable": true, "distance": 150, "color": "#00ff88", "opacity": 0.5, "width": 1 },
+    "move": { "enable": true, "speed": 1.5, "random": true, "out_mode": "out" }
+  },
+  "interactivity": {
+    "detect_on": "canvas",   // key for mouse interaction
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"       // lines converge toward mouse
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"       // add particles on click
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 200,     // distance at which lines start connecting to cursor
+        "line_linked": { "opacity": 0.8 }  // stronger connection lines
+      },
+      "push": { "particles_nb": 4 }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
+
+</body>
+</html>

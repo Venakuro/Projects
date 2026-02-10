@@ -1,0 +1,279 @@
+/* ========================
+   BASE
+======================== */
+body {
+  margin: 0;
+  font-family: "Courier New", monospace;
+  background: #050505;
+  color: #e6ffe6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========================
+   NAVIGATION
+======================== */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 5%;
+  background: rgba(5, 5, 5, 0.7);
+  border-bottom: 1px solid #00ff88;
+}
+
+.nav .logo {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #00ff88;
+}
+
+/* NAV LINKS - HORIZONTAL, BOLD, GLOWING, NO BULLETS */
+.nav-links {
+  display: flex;          /* horizontal alignment */
+  gap: 1.5rem;            /* spacing between links */
+  list-style: none;       /* remove bullet points */
+  margin: 0;              /* remove default margin */
+  padding: 0;             /* remove default padding */
+}
+
+.nav-links a {
+  color: #00ff88;         
+  font-weight: bold;       /* bold like name */
+  text-decoration: none;  
+  font-size: 0.95rem;
+  opacity: 0.9;
+  transition: 0.3s;
+  text-shadow: 
+    0 0 5px #00ff88, 
+    0 0 10px #00ff88, 
+    0 0 15px #00ff88;     /* glowing effect */
+}
+
+.nav-links a:hover {
+  opacity: 1;
+  text-shadow:
+    0 0 10px #00ff88, 
+    0 0 20px #00ff88, 
+    0 0 30px #00ff88;     /* stronger glow on hover */
+}
+
+/* ========================
+   HERO SECTION
+======================== */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+/* Particles.js background */
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+
+/* Keep hero content above particles */
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Profile picture */
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  border: 3px solid #00ff88;
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.7);
+}
+
+/* Headings in Hero */
+.hero h1 {
+  color: #00ff88;
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+/* Hero button */
+.hero .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #00ff88;
+  color: #050505;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background: #00cc66;
+}
+
+/* ========================
+   SECTIONS
+======================== */
+.section {
+  padding: 6rem 10%;
+}
+
+/* Section Headings */
+h2 {
+  color: #00ff88;
+  border-bottom: 2px solid #00ff88;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* ========================
+   CARDS (PROJECTS & EXPERIENCE)
+======================== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(0, 255, 136, 0.05);
+  border-left: 4px solid #00ff88;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin: 0;
+}
+
+/* ========================
+   SKILLS
+======================== */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+}
+
+.skills-list li {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #00ff88;
+  border-radius: 12px;                 /* slightly more rounded */
+  background: rgba(0, 255, 136, 0.1);  /* light green background */
+  color: #00ff88;                       /* green text */
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.skills-list li:hover {
+  background: rgba(0, 255, 136, 0.25); /* stronger green on hover */
+  box-shadow: 0 0 10px #00ff88;
+}
+
+
+/* ========================
+   CONTACT FORM
+======================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #00ff88;
+  background: #050505;
+  color: #e6ffe6;
+  font-family: "Courier New", monospace;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+form button {
+  padding: 0.75rem 1.5rem;
+  background: #00ff88;
+  color: #050505;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #00cc66;
+}
+
+/* ========================
+   FOOTER
+======================== */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid #00ff88;
+  opacity: 0.8;
+}
+
+/* ========================
+   LINKS
+======================== */
+a {
+  color: #00ff88;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
